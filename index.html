@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>Nome: <input type="text" name="nome" required></label><br><br>
+            <label>Data de nascimento: <input type="text" name="data" required></label><br><br>
+            <label>Endereço: <input type="text" name="endereco" required></label><br><br>
+            <label>Bairro: <input type="text" name="bairro"></label>
+            <label>Cidade: <input type="text" name="cidade"></label><br><br>
+            <label>CEP: <input type="text" name="cep"></label>
+
+            <label>Estado: <select name="estado" required>
+                <option value="CE">Ceará</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select></label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados profissionais</legend>
+            <label>Natureza do cargo:</label><br>
+            <label><input type="radio" name="cargo" value="gerencia"> Gerência</label>
+            <label><input type="radio" name="cargo" value="financeiro"> Financeiro</label>
+            <label><input type="radio" name="cargo" value="recepcao"> Recepção</label>
+            <label><input type="radio" name="cargo" value="adm"> Administrativo</label>
+            <label><input type="radio" name="cargo" value="juri"> Jurídico</label>
+            <br><br>
+            <label>Área de interesse:</label><br>
+            <label><input type="checkbox" name="computa" value="computaçao"> Computação</label>
+            <label><input type="checkbox" name="computa" value="quimic"> Química</label>
+            <label><input type="checkbox" name="computa" value="meioambi"> Meio Ambiente</label>
+            <label><input type="checkbox" name="computa" value="enge"> Engenharia</label>
+            <label><input type="checkbox" name="computa" value="matematica"> Matemática</label>
+           
+            <br><br>
+            <label>Mini Currículo:</label><br>
+            <textarea name="curriculo" cols="50" rows="5"></textarea>
+        </fieldset>
+        <br>
+        <button type="button">Enviar</button>
+        <button type="button">Limpar</button>
+    </form>
+
+    <p>Para acessar os dados do usuário, clique no link abaixo:</p>
+    <a href="table.html">Ir para Dados do Usuário</a>
+    <br><br>
+   
+</body>
+</html>
